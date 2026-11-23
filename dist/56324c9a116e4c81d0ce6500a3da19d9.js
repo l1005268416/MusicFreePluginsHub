@@ -445,7 +445,7 @@ const $e419ee3fc9a9aada$var$pluginInstance = {
     platform: "好听轻音乐",
     version: "0.1.2",
     author: "SoEasy同学",
-    srcUrl: "https://gitee.com/kevinr/tvbox/raw/master/musicfree/plugins/htqyy.js",
+    srcUrl: "http://jia.liufly.top:20001/music/56324c9a116e4c81d0ce6500a3da19d9.js",
     cacheControl: "no-cache",
     supportedSearchType: [
         "music",

@@ -6,9 +6,19 @@ from httpx import AsyncClient
 import hashlib
 
 # CDN
-CDN_URL = "https://musicfreepluginshub.2020818.xyz/"
-USE_CDN = False
+CDN_URL = "http://jia.liufly.top:20001/music/"
+USE_CDN = True
 VERSION = "0.2.0"
+
+# 手动维护的插件：不参与下载，生成 plugins.json 时直接追加
+# 对应的 JS 文件需自行放置到 dist 目录，文件名取自 URL
+MANUAL_PLUGINS = [
+    {
+        "name": "酷我",
+        "url": f"{CDN_URL}2d67f88f71ca165c29cb8994efe3c262.js",
+        "version": "0.1.0",
+    },
+]
 
 # 定义路径常量
 DATA_DIR = Path(__file__).parent / "data"
@@ -40,6 +50,9 @@ async def fetch_sub_plugins(url: str, client: AsyncClient) -> list:
             response = await client.get(url, timeout=REQUEST_TIMEOUT)
             response.raise_for_status()
             data = response.json()
+            # 兼容两种订阅格式：{"plugins": [...]} 或直接是 [...] 数组
+            if isinstance(data, list):
+                return data
             return data.get("plugins", [])
         except Exception as e:
             if retry == MAX_RETRIES - 1:
@@ -208,10 +221,14 @@ async def main():
     """主函数"""
     logger.info("开始执行插件更新任务...")
 
-    # 清空 dist 目录中的 JS 文件
+    # 清空 dist 目录中的 JS 文件（保留手动插件对应的文件）
+    manual_files = {p["url"].rsplit("/", 1)[-1] for p in MANUAL_PLUGINS}
     for js_file in DIST_DIR.glob("*.js"):
+        if js_file.name in manual_files:
+            logger.info(f"保留手动插件文件: {js_file.name}")
+            continue
         js_file.unlink()
-    logger.info("已清空 dist 目录中的 JS 文件")
+    logger.info("已清空 dist 目录中的 JS 文件（手动插件除外）")
 
     # 1. 加载配置
     origins = await load_origins()
@@ -229,6 +246,18 @@ async def main():
         # 下载和验证插件
         logger.info(f"开始下载和验证 {len(all_plugins)} 个插件...")
         valid_plugins = await fetch_plugins(all_plugins, client)
+
+        # 追加手动维护的插件（按 URL 去重，不参与下载）
+        existing_urls = {p["url"] for p in valid_plugins}
+        manual_added = 0
+        for plugin in MANUAL_PLUGINS:
+            if plugin["url"] in existing_urls:
+                continue
+            valid_plugins.append(plugin)
+            existing_urls.add(plugin["url"])
+            manual_added += 1
+        if manual_added:
+            logger.info(f"已追加 {manual_added} 个手动插件")
 
         if not valid_plugins:
             logger.error("没有有效的插件")

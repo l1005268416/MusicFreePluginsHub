@@ -148,7 +148,7 @@ module.exports = {
     author: "猫头猫",
     version: "0.0.0",
     supportedSearchType: ["music"],
-    srcUrl: "https://gitee.com/maotoumao/MusicFreePlugins/raw/v0.1/dist/udio/index.js",
+    srcUrl: "http://jia.liufly.top:20001/music/4ad17d90167dbf9cd0b6249e15c7f998.js",
     cacheControl: "no-cache",
     search,
     getMediaSource,

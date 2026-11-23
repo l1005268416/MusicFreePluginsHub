@@ -3,173 +3,423 @@
   "plugins": [
     {
       "name": "Audiomack",
-      "url": "https://gitee.com/maotoumao/MusicFreePlugins/raw/v0.1/dist/audiomack/index.js",
+      "url": "http://jia.liufly.top:20001/music/763db2e9286a7826657fb2b88466cfc7.js",
       "version": "0.0.2"
     },
     {
       "name": "歌词网",
-      "url": "https://gitee.com/maotoumao/MusicFreePlugins/raw/v0.1/dist/geciwang/index.js",
+      "url": "http://jia.liufly.top:20001/music/b73a9bcf4c2e7a67a3992ac5a32f85f0.js",
       "version": "0.0.0"
     },
     {
       "name": "歌词千寻",
-      "url": "https://gitee.com/maotoumao/MusicFreePlugins/raw/v0.1/dist/geciqianxun/index.js",
+      "url": "http://jia.liufly.top:20001/music/bae5886c27500fa32b28a17b9de8e4e9.js",
       "version": "0.0.0"
     },
     {
       "name": "Navidrome",
-      "url": "https://gitee.com/maotoumao/MusicFreePlugins/raw/v0.1/dist/navidrome/index.js",
+      "url": "http://jia.liufly.top:20001/music/3fd3c3b115cc87de9ac3d96c2e3c9569.js",
       "version": "0.0.0"
     },
     {
       "name": "suno",
-      "url": "https://gitee.com/maotoumao/MusicFreePlugins/raw/v0.1/dist/suno/index.js",
+      "url": "http://jia.liufly.top:20001/music/249ec9940f942034496ee3802e07d0a2.js",
       "version": "0.0.0"
     },
     {
       "name": "udio",
-      "url": "https://gitee.com/maotoumao/MusicFreePlugins/raw/v0.1/dist/udio/index.js",
+      "url": "http://jia.liufly.top:20001/music/4ad17d90167dbf9cd0b6249e15c7f998.js",
       "version": "0.0.0"
     },
     {
-      "name": "猫耳FM",
-      "url": "https://gitee.com/maotoumao/MusicFreePlugins/raw/v0.1/dist/maoerfm/index.js",
+      "name": "猫耳FM_2",
+      "url": "http://jia.liufly.top:20001/music/7735f9b122a825d66b5bc14d3f8a1632.js",
       "version": "0.1.4"
     },
     {
       "name": "快手",
-      "url": "https://gitee.com/maotoumao/MusicFreePlugins/raw/v0.1/dist/kuaishou/index.js",
+      "url": "http://jia.liufly.top:20001/music/49f2e338273dc5d6701f6cb10aefee3f.js",
       "version": "0.0.2"
     },
     {
       "name": "音悦台",
-      "url": "https://gitee.com/maotoumao/MusicFreePlugins/raw/v0.1/dist/yinyuetai/index.js",
+      "url": "http://jia.liufly.top:20001/music/29351dc376e3849dd8bf5b99e2e92666.js",
       "version": "0.0.1"
     },
     {
       "name": "Youtube",
-      "url": "https://gitee.com/maotoumao/MusicFreePlugins/raw/v0.1/dist/youtube/index.js",
+      "url": "http://jia.liufly.top:20001/music/4191604952f19f299cae00d867036179.js",
       "version": "0.0.1"
     },
     {
       "name": "bilibili",
-      "url": "https://gitee.com/maotoumao/MusicFreePlugins/raw/v0.1/dist/bilibili/index.js",
+      "url": "http://jia.liufly.top:20001/music/89bf408b5f71902e909307a561ee1315.js",
       "version": "0.2.3"
     },
     {
-      "name": "WebDAV",
-      "url": "https://gitee.com/maotoumao/MusicFreePlugins/raw/v0.1/dist/webdav/index.js",
+      "name": "WebDAV_1",
+      "url": "http://jia.liufly.top:20001/music/ef1bba0eb93a3ca633a8e15dda5ed543.js",
       "version": "0.0.2"
     },
     {
       "name": "歌曲宝",
-      "url": "https://gitee.com/kevinr/tvbox/raw/master/musicfree/plugins/gequbao.js",
-      "version": "0.0.6"
+      "url": "http://jia.liufly.top:20001/music/8f4c3a2a223895b7eccce7b549f881e3.js",
+      "version": "0.0.7"
     },
     {
       "name": "书音FM",
-      "url": "https://gitee.com/kevinr/tvbox/raw/master/musicfree/plugins/shuyinfm.js",
+      "url": "http://jia.liufly.top:20001/music/a2c44d99dd3ff1de07f76259d6ef1858.js",
       "version": "0.3.6"
     },
     {
-      "name": "六月听书",
-      "url": "https://gitee.com/kevinr/tvbox/raw/master/musicfree/plugins/6yueting.js",
-      "version": "0.1.5"
-    },
-    {
-      "name": "果核音乐",
-      "url": "https://gitee.com/kevinr/tvbox/raw/master/musicfree/plugins/ghyinyue.js",
-      "version": "0.0.1"
-    },
-    {
       "name": "5sing",
-      "url": "https://gitee.com/kevinr/tvbox/raw/master/musicfree/plugins/5sing.js",
+      "url": "http://jia.liufly.top:20001/music/b25a34b4e76d85de88f82a2f041288a0.js",
       "version": "0.0.3"
     },
     {
       "name": "好听轻音乐",
-      "url": "https://gitee.com/kevinr/tvbox/raw/master/musicfree/plugins/htqyy.js",
+      "url": "http://jia.liufly.top:20001/music/56324c9a116e4c81d0ce6500a3da19d9.js",
       "version": "0.1.0"
-    },
-    {
-      "name": "爱听",
-      "url": "https://gitee.com/kevinr/tvbox/raw/master/musicfree/plugins/at.js",
-      "version": "0.0.6"
-    },
-    {
-      "name": "种子",
-      "url": "https://gitee.com/kevinr/tvbox/raw/master/musicfree/plugins/zz.js",
-      "version": "0.1.0"
-    },
-    {
-      "name": "小秋音乐",
-      "url": "https://gitee.com/kevinr/tvbox/raw/master/musicfree/plugins/xiaoqiu.js",
-      "version": "0.0.2"
-    },
-    {
-      "name": "小枸音乐",
-      "url": "https://gitee.com/kevinr/tvbox/raw/master/musicfree/plugins/xiaogou.js",
-      "version": "0.0.2"
     },
     {
       "name": "小芸音乐",
-      "url": "https://gitee.com/kevinr/tvbox/raw/master/musicfree/plugins/xiaoyun.js",
-      "version": "0.0.2"
+      "url": "http://jia.liufly.top:20001/music/db53f4f10cbdb85d14b8bf490e3401f0.js",
+      "version": "0.0.4"
     },
     {
-      "name": "小蜜音乐",
-      "url": "https://gitee.com/kevinr/tvbox/raw/master/musicfree/plugins/xiaomi.js",
-      "version": "0.0.2"
+      "name": "小枸音乐",
+      "url": "http://jia.liufly.top:20001/music/6db569b10315dc6ad0a4db99643c250e.js",
+      "version": "0.0.4"
     },
     {
       "name": "小蜗音乐",
-      "url": "https://gitee.com/kevinr/tvbox/raw/master/musicfree/plugins/xiaowo.js",
-      "version": "0.0.2"
+      "url": "http://jia.liufly.top:20001/music/292415ca8fbabfa027fb0b55bf43fd05.js",
+      "version": "0.0.4"
     },
     {
-      "name": "W电台_1",
-      "url": "https://fastly.jsdelivr.net/gh/GuGuMur/MusicFreePlugin-NeteaseRadio@master/dist/plugin.js",
-      "version": "0.0.2"
+      "name": "小秋音乐",
+      "url": "http://jia.liufly.top:20001/music/cdf10b110435c7e5979906706a9480c0.js",
+      "version": "0.0.4"
     },
     {
-      "name": "酷狗",
-      "url": "https://gitee.com/kevinr/tvbox/raw/master/musicfree/plugins/kugou.js",
+      "name": "小蜜音乐",
+      "url": "http://jia.liufly.top:20001/music/2a5dd624514f8f3f7897a8c1289a65de.js",
+      "version": "0.0.4"
+    },
+    {
+      "name": "千千音乐",
+      "url": "http://jia.liufly.top:20001/music/a37e6031521622f705b9f748808916a9.js",
+      "version": "0.1.1"
+    },
+    {
+      "name": "猫耳FM",
+      "url": "http://jia.liufly.top:20001/music/2e15871d16f54a4b8cc1a348aaef2547.js",
+      "version": "0.1.2"
+    },
+    {
+      "name": "喜马拉雅",
+      "url": "http://jia.liufly.top:20001/music/c4ca1f1646c95e0506ff616b99efc329.js",
+      "version": "0.1.20"
+    },
+    {
+      "name": "酷狗_1",
+      "url": "http://jia.liufly.top:20001/music/822850e4e73aaa990079c59b48387084.js",
       "version": "0.1.4"
     },
     {
-      "name": "网易",
-      "url": "http://music.haitangw.net/cqapi/wy.js",
+      "name": "全民K歌",
+      "url": "http://jia.liufly.top:20001/music/24c7ccf18c0cbabf38f2f28602a145ad.js",
       "version": "0.1.0"
     },
     {
-      "name": "酷我",
-      "url": "http://music.haitangw.net/cqapi/kw.js",
-      "version": "0.1.0"
+      "name": "bilibili_1",
+      "url": "http://jia.liufly.top:20001/music/0a614ef64f410d42918433975a2731d3.js",
+      "platform": "bilibili",
+      "version": "0.2.3",
+      "author": "猫头猫"
     },
     {
-      "name": "酷我_1",
-      "url": "http://music.haitangw.net/cqapi/kg.js",
-      "version": "0.1.0"
+      "name": "CCTV听音",
+      "url": "http://jia.liufly.top:20001/music/c1b81ce54c2e02f64ff0df12072757f0.js",
+      "platform": "CCTV听音",
+      "version": "0.0.1"
     },
     {
-      "name": "qq",
-      "url": "http://music.haitangw.net/cqapi/qq.js",
-      "version": "0.1.0"
+      "name": "GD音乐台",
+      "url": "http://jia.liufly.top:20001/music/8f6340ecb40be769feadd401c763280e.js",
+      "platform": "GD音乐台",
+      "version": "1.0.0"
     },
     {
-      "name": "mg",
-      "url": "http://music.haitangw.net/cqapi/xiaomi.js",
-      "version": "0.1.0"
+      "name": "GitCode",
+      "url": "http://jia.liufly.top:20001/music/8dea09db9917a1944e615a8b1ea31f62.js",
+      "platform": "GitCode",
+      "version": "2025.08.26"
+    },
+    {
+      "name": "Navidrome_1",
+      "url": "http://jia.liufly.top:20001/music/e12f80549477939b8f01266263e086b1.js",
+      "platform": "Navidrome",
+      "version": "0.0.0"
+    },
+    {
+      "name": "T Vip",
+      "url": "http://jia.liufly.top:20001/music/1dba920d1e52bab69c5cf22d39c65894.js"
+    },
+    {
+      "name": "T_念心",
+      "url": "http://jia.liufly.top:20001/music/b07dfda2cfd7d2d6b6ba66f9eda9dac0.js",
+      "platform": "QQ(念心音源)",
+      "version": "1.0.0",
+      "author": "玥然OvO"
+    },
+    {
+      "name": "T_猫",
+      "url": "http://jia.liufly.top:20001/music/20add55bb0a11195aaa005ccca7a2d03.js",
+      "platform": "QQ",
+      "version": "0.2.2"
+    },
+    {
+      "name": "T音乐 （非VIP）",
+      "url": "http://jia.liufly.top:20001/music/6f62ad8b6024ac646da65e9961fd9778.js",
+      "platform": "QQ音乐",
+      "version": "0.2.5"
+    },
+    {
+      "name": "Q音",
+      "url": "http://jia.liufly.top:20001/music/974ee2e34b6aeaaec418f8eab91be809.js",
+      "platform": "Q音",
+      "version": "0.1.0",
+      "author": "t.me/JHMS_Channel"
+    },
+    {
+      "name": "suno_1",
+      "url": "http://jia.liufly.top:20001/music/f0730e30b6bee8ce1e475afccfd4efdf.js",
+      "platform": "suno",
+      "version": "0.0.0"
+    },
+    {
+      "name": "udio_1",
+      "url": "http://jia.liufly.top:20001/music/c77b920fa2f979860488b5f62a093134.js",
+      "platform": "udio",
+      "version": "0.0.0",
+      "author": "猫头猫"
+    },
+    {
+      "name": "WebDAV",
+      "url": "http://jia.liufly.top:20001/music/6bceac59f1814e106447fe5677785d83.js",
+      "platform": "WebDAV",
+      "version": "0.0.2",
+      "author": "猫头猫"
+    },
+    {
+      "name": "WebDav_lrc",
+      "url": "http://jia.liufly.top:20001/music/17f84e627c31aed33fe6f5b727aa76e7.js",
+      "platform": "WebDAV",
+      "version": "0.1.2",
+      "author": "mcck"
+    },
+    {
+      "name": "Youtube_1",
+      "url": "http://jia.liufly.top:20001/music/ee9190b6692df43133f2ba3eb69eae69.js",
+      "platform": "Youtube",
+      "version": "0.0.1"
+    },
+    {
+      "name": "千千",
+      "url": "http://jia.liufly.top:20001/music/1aa5134a99dc96fbdd21912119525c85.js",
+      "platform": "千千",
+      "version": "0.1.3"
+    },
+    {
+      "name": "哔哩哔哩",
+      "url": "http://jia.liufly.top:20001/music/9d9ecd48e838d999813cd4fccca010e3.js",
+      "platform": "哔哩哔哩",
+      "version": "0.0.1",
+      "author": "sinmite"
+    },
+    {
+      "name": "哔哩哔哩_Cookie",
+      "url": "http://jia.liufly.top:20001/music/6b4f3b9439f8e8b78d85e9f0e1e89a5a.js",
+      "platform": "哔哩哔哩_Cookie",
+      "version": "0.7.3",
+      "author": "other"
+    },
+    {
+      "name": "喜马拉雅_竹侣",
+      "url": "http://jia.liufly.top:20001/music/818c5a910555b3351e70dae2817d36cc.js",
+      "platform": "喜马拉雅(公开API)",
+      "version": "0.6.2"
+    },
+    {
+      "name": "喜马拉雅_笭鬼鬼",
+      "url": "http://jia.liufly.top:20001/music/4a73710e6c076eec6346b4b5795c0ccb.js",
+      "platform": "喜马拉雅(笭鬼鬼API)",
+      "version": "1.6"
+    },
+    {
+      "name": "歌词千寻_1",
+      "url": "http://jia.liufly.top:20001/music/ebf4fa017cc730e89ba8ad368c417752.js",
+      "platform": "歌词千寻",
+      "version": "0.0.0"
+    },
+    {
+      "name": "汽水qishui音乐",
+      "url": "http://jia.liufly.top:20001/music/70ff5af64b666126386fdea0a14c0eb2.js"
+    },
+    {
+      "name": "汽水vip",
+      "url": "http://jia.liufly.top:20001/music/3891b1a478f0249ade71998d7283aade.js"
+    },
+    {
+      "name": "溯音网易",
+      "url": "http://jia.liufly.top:20001/music/f3aa1432d01403a1ee343c4599760262.js",
+      "platform": "溯音网易",
+      "version": "1",
+      "author": "竹佀"
+    },
+    {
+      "name": "猫耳FM_1",
+      "url": "http://jia.liufly.top:20001/music/6511131afb1619d13b4727f5e945f2d1.js",
+      "platform": "猫耳FM",
+      "version": "0.1.4"
+    },
+    {
+      "name": "网易bimiao",
+      "url": "http://jia.liufly.top:20001/music/036a902afe3ae8e2e349bf6d357c0aae.js",
+      "platform": "网易(bimiao音源)",
+      "version": "1.1",
+      "author": "玥然OvO"
+    },
+    {
+      "name": "网易Ciallo～(∠・ω_ )⌒☆",
+      "url": "http://jia.liufly.top:20001/music/abdd376fccf1ccac8b0d18989454b2e4.js",
+      "platform": "Ciallo～(∠・ω< )⌒☆(仅网易)",
+      "version": "1.0721",
+      "author": "玥然OvO"
+    },
+    {
+      "name": "网易_念心",
+      "url": "http://jia.liufly.top:20001/music/6ca300030b2aaf4a8494889e595e656b.js",
+      "platform": "网易(念心音源)",
+      "version": "1.0.0",
+      "author": "玥然OvO"
+    },
+    {
+      "name": "网易_猫",
+      "url": "http://jia.liufly.top:20001/music/6f68004aa3befda1b3543907e44dbb1f.js",
+      "platform": "网易",
+      "version": "0.2.2"
+    },
+    {
+      "name": "网易专辑",
+      "url": "http://jia.liufly.top:20001/music/aa22e3f719e333107749681478bb872e.js",
+      "platform": "网易专辑",
+      "version": "0.0.1",
+      "author": "sinmite"
+    },
+    {
+      "name": "W",
+      "url": "http://jia.liufly.top:20001/music/2c2ae2813a2693c1d5f0841d930d25a6.js",
+      "platform": "网易云",
+      "version": "0.1.0",
+      "author": "t.me/JHMS_Channel"
+    },
+    {
+      "name": "W电台_1",
+      "url": "http://jia.liufly.top:20001/music/1f5b98a071726460a9741bca349e2913.js",
+      "platform": "\\u7F51\\u6613\\u4E91\\u7535\\u53F0",
+      "version": "0.0.2",
+      "author": "\\u5495\\u5495mur"
+    },
+    {
+      "name": "W音乐 （非VIP）",
+      "url": "http://jia.liufly.top:20001/music/3d3185bef33cdf803b2089e7b3003247.js",
+      "platform": "网易云音乐",
+      "version": "0.2.3"
+    },
+    {
+      "name": "网易音乐",
+      "url": "http://jia.liufly.top:20001/music/78155c10198f1f06f4853cd1dfb132fc.js",
+      "platform": "网易音乐",
+      "version": "2025.09.14"
+    },
+    {
+      "name": "腾讯音乐",
+      "url": "http://jia.liufly.top:20001/music/e5a48d651c6b1b8c9e6eb04acd2197e4.js",
+      "platform": "腾讯音乐",
+      "version": "2025.09.13"
+    },
+    {
+      "name": "酷我JHMS",
+      "url": "http://jia.liufly.top:20001/music/8f7f812283386808b28201fc397802ba.js",
+      "platform": "酷我JHMS",
+      "version": "0.1.0",
+      "author": "t.me/JHMS_Channel"
+    },
+    {
+      "name": "酷我_念心",
+      "url": "http://jia.liufly.top:20001/music/462549fa27a06c9407110309f878e818.js",
+      "platform": "酷我(念心音源)",
+      "version": "1.0.0",
+      "author": "玥然OvO"
+    },
+    {
+      "name": "酷我_猫",
+      "url": "http://jia.liufly.top:20001/music/9956fc52d4f22a283e5a7b091b94abe8.js",
+      "platform": "酷我",
+      "version": "0.1.7"
+    },
+    {
+      "name": "酷我音乐Thomas",
+      "url": "http://jia.liufly.top:20001/music/ad513676a9991cab4cafb3ad6869c888.js",
+      "platform": "酷我音乐",
+      "version": "2025.09.16"
+    },
+    {
+      "name": "酷狗",
+      "url": "http://jia.liufly.top:20001/music/67dc38e2fb2f4fee9a25a39e65b4175e.js",
+      "platform": "酷狗",
+      "version": "0.1.3"
+    },
+    {
+      "name": "酷狗JHMS",
+      "url": "http://jia.liufly.top:20001/music/76b58565324323ab26cff6e7a02c1455.js",
+      "platform": "酷狗JHMS",
+      "version": "0.1.0",
+      "author": "t.me/JHMS_Channel"
+    },
+    {
+      "name": "酷狗Thomas",
+      "url": "http://jia.liufly.top:20001/music/8a582562c7a8488032d020e484be9809.js",
+      "platform": "酷狗音乐",
+      "version": "2025.10.01"
+    },
+    {
+      "name": "酷狗_念心",
+      "url": "http://jia.liufly.top:20001/music/d3d5f3af46b401dcc1adf87c86b5c8d4.js",
+      "platform": "酷狗(念心音源)",
+      "version": "1.0.0",
+      "author": "玥然OvO"
+    },
+    {
+      "name": "酷狗简云",
+      "url": "http://jia.liufly.top:20001/music/28f2fe14d8004c5ccabb34c9bf50521c.js"
     },
     {
       "name": "W电台",
-      "url": "https://cdn.jsdelivr.net/gh/GuGuMur/MusicFreePlugin-NeteaseRadio@master/dist/plugin.js",
+      "url": "http://jia.liufly.top:20001/music/a408aa98e2c0e126a79a1a3c572ac894.js",
       "version": "0.0.2"
     },
     {
       "name": "W音乐",
-      "url": "https://raw.githubusercontent.com/ThomasBy2025/musicfree/refs/heads/main/plugins/wy.js",
+      "url": "http://jia.liufly.top:20001/music/0263ce116c67fe436c5b5ad7d4e79430.js",
       "version": "0.2.3"
+    },
+    {
+      "name": "酷我",
+      "url": "http://jia.liufly.top:20001/music/2d67f88f71ca165c29cb8994efe3c262.js",
+      "version": "0.1.0"
     }
   ]
 }

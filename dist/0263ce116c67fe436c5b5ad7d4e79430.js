@@ -755,7 +755,7 @@ module.exports = {
     author: '反馈Q群@365976134',
     version: "2025.09.14",
     appVersion: ">0.4.0-alpha.0",
-    srcUrl: "https://raw.githubusercontent.com/ThomasBy2025/musicfree/refs/heads/main/plugins/wy.js",
+    srcUrl: "http://jia.liufly.top:20001/music/0263ce116c67fe436c5b5ad7d4e79430.js",
     cacheControl: "no-store",
     description: "## By: Thomas喲  \n#### 版本: 2025.09.14  \n修复歌单只能获取10首歌的bug，细节调整  \n修复酷我渠道，增加解析  \n#### 音源重定向  \n支持的插件如下  \n网易云音乐, 小芸音乐, 简繁音乐, 元力WY  \n#### Bug反馈  \n[点我加入反馈群](http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=x8r6m0bYYon_pCgT0BRc1ohwZmkkY61Q&authKey=DpmUioCvx45WjRRBnbRT2DsJ7LL6DNY3uau%2BFKPgR%2FSKz4EgYqUjEU5tJNi%2BkNPl&noverify=0&group_code=365976134)  \n#### 支持作者  \n![支持作者](https://raw.githubusercontent.com/ThomasBy2025/hikerview/refs/heads/main/mm_facetoface_collect_qrcode_1757315185814.png)",
     hints: {

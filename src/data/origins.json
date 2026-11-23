@@ -1,17 +1,18 @@
 {
   "sources": [
     "https://gitee.com/maotoumao/MusicFreePlugins/raw/master/plugins.json",
-    "https://mf.ikunshare.com/plugins.json",
     "https://gitee.com/kevinr/tvbox/raw/master/musicfree/plugins.json",
-    "https://gitee.com/xujin621/soul-yin-download-sound/attach_files/2093957/download/music.json",
-    "http://music.haitangw.net/元力音乐.json",
-    "https://13413.kstore.space/musicfree.json"
+    "https://gist.githubusercontent.com/qwerwhr/f0d70416191d5fb5192d0d2c6121933b/raw/plugins.json"
   ],
   "dead_sources_backup": [
     "https://gitee.com/ikun0014/musicfree/raw/master/plugins.json",
     "https://gitee.com/ThomasYou/musicfree/raw/master/dist/plugins.json",
     "https://gitlab.com/acoolbook/musicfree/-/raw/main/music.json",
-    "https://raw.niuma666bet.buzz/Huibq/keep-alive/master/Music_Free/myPlugins.json"
+    "https://raw.niuma666bet.buzz/Huibq/keep-alive/master/Music_Free/myPlugins.json",
+    "https://mf.ikunshare.com/plugins.json",
+    "https://gitee.com/xujin621/soul-yin-download-sound/attach_files/2093957/download/music.json",
+    "http://music.haitangw.net/元力音乐.json",
+    "https://13413.kstore.space/musicfree.json"
   ],
   "singles": [
     {
