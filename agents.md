@@ -1,4 +1,4 @@
-# MusicFreePluginsHub 记忆：运行与部署
+# agents.md — MusicFreePluginsHub 运行与部署记忆
 
 本文档记录本项目的运行（重新生成 dist）与部署方式，供后续维护复用。
 
