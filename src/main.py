@@ -4,6 +4,10 @@ from pathlib import Path
 from loguru import logger
 from httpx import AsyncClient
 import hashlib
+import os
+import shutil
+import subprocess
+import tempfile
 
 # CDN
 CDN_URL = "http://jia.liufly.top:20001/music/"
@@ -33,9 +37,107 @@ DIST_JSON_PATH = DIST_DIR / "plugins.json"
 MAX_RETRIES = 3
 RETRY_DELAY = 1
 REQUEST_TIMEOUT = 10.0
+
+# 校验相关常量
+MIN_PLUGIN_SIZE = 200  # 小于此大小的插件内容视为无效
+SMOKE_MAX_CONCURRENCY = int(os.environ.get("MUSICFREE_SMOKE_CONCURRENCY", "5"))  # 冒烟测试并发上限
+SMOKE_TEST = os.environ.get("MUSICFREE_SMOKE", "0") in ("1", "true", "yes")  # 功能冒烟测试开关（默认关闭）
+SMOKE_TIMEOUT = int(os.environ.get("MUSICFREE_SMOKE_TIMEOUT", "5000"))
+SMOKE_QUERY = os.environ.get("MUSICFREE_SMOKE_QUERY", "周杰伦")
+SMOKE_RUNNER = Path(__file__).parent / "smoke_check.cjs"
         
 
+def _looks_like_html(content: str) -> bool:
+    head = content.lstrip().lower()[:500]
+    return "<html" in head or "<!doctype" in head or "<head" in head or "<body" in head or "loading..." in head
+
+
+def validate_plugin_content(content: str) -> tuple[bool, str]:
+    """静态校验插件内容：拒绝空/过小/HTML/语法错误的插件。
+
+    Args:
+        content: 插件 JS 内容
+
+    Returns:
+        (是否可用, 原因)
+    """
+    if not content or not content.strip():
+        return False, "内容为空"
+    if len(content) < MIN_PLUGIN_SIZE:
+        return False, f"内容过小（{len(content)} 字节）"
+    if _looks_like_html(content):
+        return False, "内容为 HTML 而非 JS"
+    node = shutil.which("node")
+    if node:
+        try:
+            res = subprocess.run(
+                [node, "--check", "-"],
+                input=content,
+                capture_output=True,
+                text=True,
+                timeout=15,
+            )
+            if res.returncode != 0:
+                err = (res.stderr or res.stdout or "unknown error").strip().splitlines()
+                return False, f"JS 语法错误: {err[0][:120]}"
+        except Exception as e:
+            logger.warning(f"语法检查不可用（{e}），保留该插件")
+    else:
+        logger.warning("未找到 node，跳过 JS 语法校验")
+    return True, "ok"
+
+
+def run_smoke_check(content: str, name: str) -> tuple[bool, str]:
+    """可选的功能冒烟测试：用 node 加载插件并真实调用 search(query)，5s 超时。
+
+    Args:
+        content: 插件 JS 内容
+        name: 插件名称（仅用于日志）
+
+    Returns:
+        (是否通过, 说明)
+    """
+    node = shutil.which("node")
+    if not node or not SMOKE_RUNNER.exists():
+        logger.warning(f"跳过功能冒烟测试: 未找到 node 或 smoke_check.cjs")
+        return True, "跳过: 未找到 node/smoke_check.cjs"
+    tmp_path = None
+    try:
+        with tempfile.NamedTemporaryFile(suffix=".js", delete=False, mode="w", encoding="utf-8") as f:
+            f.write(content)
+            tmp_path = f.name
+        res = subprocess.run(
+            [node, str(SMOKE_RUNNER), tmp_path, SMOKE_QUERY, str(SMOKE_TIMEOUT), "music"],
+            capture_output=True,
+            text=True,
+            timeout=SMOKE_TIMEOUT / 1000 + 10,
+        )
+        out = (res.stdout or "").strip()
+        # 优先取最后一行（插件内部可能打印调试信息）
+        line = out.splitlines()[-1] if out else ""
+        try:
+            info = json.loads(line)
+        except Exception:
+            return False, f"冒烟输出异常: {line[:120]}"
+        # 通过标准："ok":true 且有 items 数 > 0
+        if info.get("ok"):
+            return True, info.get("info", "ok")
+        return False, info.get("info", "未知失败")
+    except subprocess.TimeoutExpired:
+        return False, f"超过 {SMOKE_TIMEOUT / 1000}s 超时"
+    except Exception as e:
+        logger.warning(f"功能冒烟测试出错（{e}），保留该插件")
+        return True, f"跳过: {e}"
+    finally:
+        if tmp_path:
+            try:
+                os.unlink(tmp_path)
+            except Exception:
+                pass
+
+
 async def fetch_sub_plugins(url: str, client: AsyncClient) -> list:
+
     """从订阅源获取单个插件列表
 
     Args:
@@ -76,6 +178,7 @@ async def fetch_plugins(plugins: list, client: AsyncClient) -> list:
     Returns:
         有效的插件列表
     """
+    smoke_semaphore = asyncio.Semaphore(SMOKE_MAX_CONCURRENCY)
     seen_urls = set()  # 用于去重
     name_count = {}  # 用于统计重名插件
 
@@ -108,6 +211,20 @@ async def fetch_plugins(plugins: list, client: AsyncClient) -> list:
                     original_url = url.replace('\\', '')  # 处理可能存在的转义字符
                     cdn_url = f"{CDN_URL}{md5}.js"
                     content = content.replace(original_url, cdn_url)
+
+                # 静态校验插件内容（拒绝 HTML/语法错误/过小的插件）
+                is_valid, reason = validate_plugin_content(content)
+                if not is_valid:
+                    logger.warning(f"插件 {plugin.get('name', url)} 校验失败，跳过: {reason}")
+                    return False, plugin
+
+                # 功能冒烟测试（默认关闭，MUSICFREE_SMOKE=1 开启）
+                if SMOKE_TEST:
+                    async with smoke_semaphore:
+                        ok, smoke_info = await asyncio.to_thread(run_smoke_check, content, plugin.get("name", url))
+                    if not ok:
+                        logger.warning(f"插件 {plugin.get('name', url)} 冒烟失败，跳过: {smoke_info}")
+                        return False, plugin
 
                 # 保存处理后的插件文件
                 output_path = DIST_DIR / f"{md5}.js"

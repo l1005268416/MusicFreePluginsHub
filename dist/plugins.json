@@ -12,27 +12,27 @@
       "version": "0.0.0"
     },
     {
-      "name": "歌词千寻",
+      "name": "歌词千寻_1",
       "url": "http://jia.liufly.top:20001/music/bae5886c27500fa32b28a17b9de8e4e9.js",
       "version": "0.0.0"
     },
     {
-      "name": "Navidrome",
+      "name": "Navidrome_1",
       "url": "http://jia.liufly.top:20001/music/3fd3c3b115cc87de9ac3d96c2e3c9569.js",
       "version": "0.0.0"
     },
     {
-      "name": "suno",
+      "name": "suno_1",
       "url": "http://jia.liufly.top:20001/music/249ec9940f942034496ee3802e07d0a2.js",
       "version": "0.0.0"
     },
     {
-      "name": "udio",
+      "name": "udio_1",
       "url": "http://jia.liufly.top:20001/music/4ad17d90167dbf9cd0b6249e15c7f998.js",
       "version": "0.0.0"
     },
     {
-      "name": "猫耳FM_2",
+      "name": "猫耳FM_1",
       "url": "http://jia.liufly.top:20001/music/7735f9b122a825d66b5bc14d3f8a1632.js",
       "version": "0.1.4"
     },
@@ -47,12 +47,12 @@
       "version": "0.0.1"
     },
     {
-      "name": "Youtube",
+      "name": "Youtube_1",
       "url": "http://jia.liufly.top:20001/music/4191604952f19f299cae00d867036179.js",
       "version": "0.0.1"
     },
     {
-      "name": "bilibili",
+      "name": "bilibili_1",
       "url": "http://jia.liufly.top:20001/music/89bf408b5f71902e909307a561ee1315.js",
       "version": "0.2.3"
     },
@@ -107,32 +107,12 @@
       "version": "0.0.4"
     },
     {
-      "name": "千千音乐",
-      "url": "http://jia.liufly.top:20001/music/a37e6031521622f705b9f748808916a9.js",
-      "version": "0.1.1"
-    },
-    {
-      "name": "猫耳FM",
-      "url": "http://jia.liufly.top:20001/music/2e15871d16f54a4b8cc1a348aaef2547.js",
-      "version": "0.1.2"
-    },
-    {
-      "name": "喜马拉雅",
-      "url": "http://jia.liufly.top:20001/music/c4ca1f1646c95e0506ff616b99efc329.js",
-      "version": "0.1.20"
-    },
-    {
       "name": "酷狗_1",
       "url": "http://jia.liufly.top:20001/music/822850e4e73aaa990079c59b48387084.js",
       "version": "0.1.4"
     },
     {
-      "name": "全民K歌",
-      "url": "http://jia.liufly.top:20001/music/24c7ccf18c0cbabf38f2f28602a145ad.js",
-      "version": "0.1.0"
-    },
-    {
-      "name": "bilibili_1",
+      "name": "bilibili",
       "url": "http://jia.liufly.top:20001/music/0a614ef64f410d42918433975a2731d3.js",
       "platform": "bilibili",
       "version": "0.2.3",
@@ -157,7 +137,7 @@
       "version": "2025.08.26"
     },
     {
-      "name": "Navidrome_1",
+      "name": "Navidrome",
       "url": "http://jia.liufly.top:20001/music/e12f80549477939b8f01266263e086b1.js",
       "platform": "Navidrome",
       "version": "0.0.0"
@@ -193,13 +173,13 @@
       "author": "t.me/JHMS_Channel"
     },
     {
-      "name": "suno_1",
+      "name": "suno",
       "url": "http://jia.liufly.top:20001/music/f0730e30b6bee8ce1e475afccfd4efdf.js",
       "platform": "suno",
       "version": "0.0.0"
     },
     {
-      "name": "udio_1",
+      "name": "udio",
       "url": "http://jia.liufly.top:20001/music/c77b920fa2f979860488b5f62a093134.js",
       "platform": "udio",
       "version": "0.0.0",
@@ -220,7 +200,7 @@
       "author": "mcck"
     },
     {
-      "name": "Youtube_1",
+      "name": "Youtube",
       "url": "http://jia.liufly.top:20001/music/ee9190b6692df43133f2ba3eb69eae69.js",
       "platform": "Youtube",
       "version": "0.0.1"
@@ -258,7 +238,7 @@
       "version": "1.6"
     },
     {
-      "name": "歌词千寻_1",
+      "name": "歌词千寻",
       "url": "http://jia.liufly.top:20001/music/ebf4fa017cc730e89ba8ad368c417752.js",
       "platform": "歌词千寻",
       "version": "0.0.0"
@@ -279,7 +259,7 @@
       "author": "竹佀"
     },
     {
-      "name": "猫耳FM_1",
+      "name": "猫耳FM",
       "url": "http://jia.liufly.top:20001/music/6511131afb1619d13b4727f5e945f2d1.js",
       "platform": "猫耳FM",
       "version": "0.1.4"
@@ -326,7 +306,7 @@
       "author": "t.me/JHMS_Channel"
     },
     {
-      "name": "W电台_1",
+      "name": "W电台",
       "url": "http://jia.liufly.top:20001/music/1f5b98a071726460a9741bca349e2913.js",
       "platform": "\\u7F51\\u6613\\u4E91\\u7535\\u53F0",
       "version": "0.0.2",
@@ -371,12 +351,6 @@
       "version": "0.1.7"
     },
     {
-      "name": "酷我音乐Thomas",
-      "url": "http://jia.liufly.top:20001/music/ad513676a9991cab4cafb3ad6869c888.js",
-      "platform": "酷我音乐",
-      "version": "2025.09.16"
-    },
-    {
       "name": "酷狗",
       "url": "http://jia.liufly.top:20001/music/67dc38e2fb2f4fee9a25a39e65b4175e.js",
       "platform": "酷狗",
@@ -390,12 +364,6 @@
       "author": "t.me/JHMS_Channel"
     },
     {
-      "name": "酷狗Thomas",
-      "url": "http://jia.liufly.top:20001/music/8a582562c7a8488032d020e484be9809.js",
-      "platform": "酷狗音乐",
-      "version": "2025.10.01"
-    },
-    {
       "name": "酷狗_念心",
       "url": "http://jia.liufly.top:20001/music/d3d5f3af46b401dcc1adf87c86b5c8d4.js",
       "platform": "酷狗(念心音源)",
@@ -407,7 +375,7 @@
       "url": "http://jia.liufly.top:20001/music/28f2fe14d8004c5ccabb34c9bf50521c.js"
     },
     {
-      "name": "W电台",
+      "name": "W电台_1",
       "url": "http://jia.liufly.top:20001/music/a408aa98e2c0e126a79a1a3c572ac894.js",
       "version": "0.0.2"
     },
